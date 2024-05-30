@@ -1,0 +1,464 @@
+
+  @media only screen and (min-width: 330px) {
+    .campaign-articles {
+      padding-left: 24px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .campaign-articles {
+      padding-left: 0;
+    }
+    .campaign-articles--carousel {
+      position: relative;
+    }
+    .campaign-articles--carousel:after {
+      background: linear-gradient(270deg, #fff, transparent);
+      content: "";
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 110px;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .campaign-articles--4 .campaign-articles__article {
+      width: 25%;
+    }
+  }
+  .campaign-articles .flickity-slider {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+  }
+  .campaign-articles .flickity-viewport {
+    overflow: hidden;
+    position: relative;
+  }
+  .campaign-articles__group-wrapper {
+    align-items: center;
+    opacity: 0;
+    position: relative;
+  }
+  .campaign-articles__group-wrapper:focus {
+    border: 0;
+    outline: none;
+  }
+  .campaign-articles__group-wrapper:hover {
+    cursor: grab;
+  }
+  .campaign-articles__group-wrapper:active {
+    cursor: grabbing;
+  }
+  .campaign-articles__group-wrapper.-active {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+  .noscript .campaign-articles__group-wrapper {
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    opacity: 1;
+    overflow-x: auto;
+    padding-bottom: 24px;
+  }
+  .campaign-articles__article {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+    min-height: 460px;
+    padding: 20px;
+    width: 80%;
+  }
+  @media only screen and (min-width: 768px) {
+    .campaign-articles__article {
+      margin-right: 24px;
+      max-width: 280px;
+      width: 30%;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .campaign-articles__article {
+      max-width: 100%;
+      width: 22%;
+    }
+  }
+  .campaign-articles__article.-color-primary-medium {
+    background-color: #f65050;
+  }
+  .campaign-articles__article.-color-primary-medium .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-primary-medium
+    .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-purple {
+    background-color: #4e47c9;
+  }
+  .campaign-articles__article.-color-purple .campaign-articles__title {
+    color: #fff;
+  }
+  .campaign-articles__article.-color-purple .campaign-articles__title-icon {
+    fill: #fff;
+  }
+  .campaign-articles__article.-color-teal {
+    background-color: #008c9b;
+  }
+  .campaign-articles__article.-color-teal .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-teal .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-green-light {
+    background-color: #1eaf5f;
+  }
+  .campaign-articles__article.-color-green-light .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-green-light .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-red-dark {
+    background-color: #a8001e;
+  }
+  .campaign-articles__article.-color-red-dark .campaign-articles__title {
+    color: #fff;
+  }
+  .campaign-articles__article.-color-red-dark .campaign-articles__title-icon {
+    fill: #fff;
+  }
+  .campaign-articles__article.-color-purple-dark {
+    background-color: #30307b;
+  }
+  .campaign-articles__article.-color-purple-dark .campaign-articles__title {
+    color: #fff;
+  }
+  .campaign-articles__article.-color-purple-dark .campaign-articles__title-icon {
+    fill: #fff;
+  }
+  .campaign-articles__article.-color-teal-dark {
+    background-color: #005a87;
+  }
+  .campaign-articles__article.-color-teal-dark .campaign-articles__title {
+    color: #fff;
+  }
+  .campaign-articles__article.-color-teal-dark .campaign-articles__title-icon {
+    fill: #fff;
+  }
+  .campaign-articles__article.-color-pastel-yellow {
+    background-color: #ffe178;
+  }
+  .campaign-articles__article.-color-pastel-yellow .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-pastel-yellow
+    .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-teal-pastel {
+    background-color: #99d1d7;
+  }
+  .campaign-articles__article.-color-teal-pastel .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-teal-pastel .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-beige {
+    background-color: #f7f1eb;
+  }
+  .campaign-articles__article.-color-beige .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-beige .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-blue-extra-light {
+    background-color: #f6fafa;
+  }
+  .campaign-articles__article.-color-blue-extra-light .campaign-articles__title {
+    color: #fff;
+  }
+  .campaign-articles__article.-color-blue-extra-light
+    .campaign-articles__title-icon {
+    fill: #fff;
+  }
+  .campaign-articles__article.-color-gray-extra-light {
+    background-color: #fafafa;
+  }
+  .campaign-articles__article.-color-gray-extra-light .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-gray-extra-light
+    .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-green-extra-light {
+    background-color: #f2f6f4;
+  }
+  .campaign-articles__article.-color-green-extra-light .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-green-extra-light
+    .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-pink-extra-light {
+    background-color: #fef4f2;
+  }
+  .campaign-articles__article.-color-pink-extra-light .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-pink-extra-light
+    .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-white {
+    background-color: #fff;
+  }
+  .campaign-articles__article.-color-white .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-white .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__article.-color-gray-dark {
+    background-color: #464f60;
+  }
+  .campaign-articles__article.-color-gray-dark .campaign-articles__title {
+    color: #fff;
+  }
+  .campaign-articles__article.-color-gray-dark .campaign-articles__title-icon {
+    fill: #fff;
+  }
+  .campaign-articles__article.-color-green-dark {
+    background-color: #126939;
+  }
+  .campaign-articles__article.-color-green-dark .campaign-articles__title {
+    color: #1d1d1d;
+  }
+  .campaign-articles__article.-color-green-dark .campaign-articles__title-icon {
+    fill: #1d1d1d;
+  }
+  .campaign-articles__title {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  
+  
+  .campaign-articles__title-icon {
+    height: 12px;
+    opacity: 0.7;
+    transform: rotate(180deg);
+    width: 12px;
+  }
+  .campaign-articles__image-wrap {
+    margin-bottom: 25px;
+    margin-top: auto;
+  }
+  .campaign-articles__image {
+    margin: 0 auto;
+    max-width: 290px;
+  }
+  .campaign-articles__image--hexagon {
+    max-width: 300px;
+  }
+  .campaign-articles__image .shape--hexagon {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .campaign-articles__tail {
+    white-space: nowrap;
+  }
+  .campaign-hero {
+    padding-right: 24px;
+    width: 100%;
+  }
+  @media only screen and (min-width: 330px) {
+    .campaign-hero {
+      border-left: 4px solid;
+      padding-left: calc(24px - 2.3vw);
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .campaign-hero {
+      border-left: none;
+      max-width: 720px;
+      padding-left: 0;
+      padding-right: 48px;
+      width: calc(50% + 50px);
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .campaign-hero {
+      max-width: 1200px;
+    }
+  }
+  .campaign-hero__eyebrow {
+    color: #f65050;
+    font-family: NB Akademie Mono, ui-monospace, Menlo, Monaco, Cascadia Mono,
+      Segoe UI Mono, Roboto Mono, Oxygen Mono, "Ubuntu Monospace", Source Code Pro,
+      Fira Mono, Droid Sans Mono, Courier New, monospace, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  @media only screen and (min-width: 768px) {
+    .campaign-hero__eyebrow {
+      margin-bottom: 24px;
+    }
+  }
+  .campaign-hero__title {
+    font-family: NB International, -apple-system, BlinkMacSystemFont, Segoe UI,
+      system-ui, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0 0 24px;
+  }
+  @media only screen and (min-width: 768px) {
+    .campaign-hero__title {
+      font-size: 3.4rem;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .campaign-hero__title {
+      font-size: 4.8rem;
+    }
+  }
+  @media only screen and (min-width: 1920px) {
+    .campaign-hero__title {
+      font-size: 6.4rem;
+    }
+  }
+  .campaign-hero__description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 1.7;
+    margin: 0 0 24px;
+  }
+  @media only screen and (min-width: 1025px) {
+    .campaign-hero__description {
+      font-size: 1.6rem;
+    }
+  }
+  @media only screen and (min-width: 1920px) {
+    .campaign-hero__description {
+      font-size: 2rem;
+    }
+  }
+  
+ 
+  .campaign-hero.-color-primary-medium {
+    border-color: #f65050;
+  }
+  .campaign-hero.-color-purple {
+    border-color: #4e47c9;
+  }
+  .campaign-hero.-color-teal {
+    border-color: #008c9b;
+  }
+  .campaign-hero.-color-green-light {
+    border-color: #1eaf5f;
+  }
+  .campaign-hero.-color-red-dark {
+    border-color: #a8001e;
+  }
+  .campaign-hero.-color-purple-dark {
+    border-color: #30307b;
+  }
+  .campaign-hero.-color-teal-dark {
+    border-color: #005a87;
+  }
+  .campaign-hero.-color-pastel-yellow {
+    border-color: #ffe178;
+  }
+  .campaign-hero.-color-teal-pastel {
+    border-color: #99d1d7;
+  }
+  .campaign-hero.-color-beige {
+    border-color: #f7f1eb;
+  }
+  .campaign-hero.-color-blue-extra-light {
+    border-color: #f6fafa;
+  }
+  .campaign-hero.-color-gray-extra-light {
+    border-color: #fafafa;
+  }
+  .campaign-hero.-color-green-extra-light {
+    border-color: #f2f6f4;
+  }
+  .campaign-hero.-color-pink-extra-light {
+    border-color: #fef4f2;
+  }
+  .campaign-hero.-color-white {
+    border-color: #fff;
+  }
+  .campaign-hero.-color-gray-dark {
+    border-color: #464f60;
+  }
+  .campaign-hero.-color-green-dark {
+    border-color: #126939;
+  }
+  .home-campaign .flickity-button {
+    background: #fff;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background 0.1s ease-in-out;
+  }
+  .home-campaign .flickity-button::-moz-focus-inner {
+    border: 0;
+  }
+  .home-campaign .flickity-button:hover {
+    background: #fff;
+  }
+  .home-campaign .flickity-button:focus {
+    background: #fff;
+    border: 0;
+    box-shadow: 0 0 3px #ed0c0c;
+    outline: none;
+  }
+  .home-campaign .flickity-prev-next-button {
+    align-items: center;
+    background-color: #f6fafa;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    width: 42px;
+  }
+  .home-campaign .flickity-prev-next-button:hover {
+    cursor: pointer;
+  }
+  .home-campaign .flickity-prev-next-button.next svg {
+    transform: rotate(180deg);
+  }
+  .home-campaign .flickity-button-icon {
+    fill: #1d1d1d;
+    height: 16px;
+    width: 20px;
+  }
+  .home-campaign .flickity-button:disabled {
+    display: block;
+  }
+  .home-campaign__carousel-nav {
+    display: flex;
+    gap: 13px;
+    margin-right: 35px;
+  }
+  .home-campaign .flickity-button-icon {
+    fill: #1d1d1d;
+    height: 16px;
+    width: 20px;
+}
+
+  
